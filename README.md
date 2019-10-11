@@ -8,7 +8,7 @@ A neat Bash script to build and install Enlightenment 23 on **Ubuntu Eoan Ermine
 Make sure that the `build-essential` and `git` packages are installed, then clone this repository:
 
 ```bash
-git clone https://github.com/batden/epanema.git .eligible
+git clone https://github.com/batden/eligible.git .eligible
 ```
 
 That creates a new [hidden folder](https://itsfoss.com/hide-folders-and-show-hidden-files-in-ubuntu-beginner-trick/) named _".eligible"_ in your home directory.
