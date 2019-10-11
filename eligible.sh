@@ -642,7 +642,6 @@ install_now() {
 update_go() {
   clear
   printf "\n$BDG%s $OFF%s\n\n" "* UPDATING ENLIGHTENMENT DESKTOP: PLAIN BUILD *"
-  fi
 
   cp -f $SCRFLR/eligible.sh $HOME/.local/bin
   chmod +x $HOME/.local/bin/eligible.sh
