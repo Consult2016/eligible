@@ -1,5 +1,5 @@
 
-# elibgible.sh
+# eligible.sh
 
 A neat Bash script to build and install Enlightenment 23 on **Ubuntu Eoan Ermine**.
 
