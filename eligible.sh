@@ -411,6 +411,7 @@ rebuild_rel() {
 }
 
 rebuild_wld() {
+  ESRC=$(cat $HOME/.cache/ebuilds/storepath)
   e_tokens
   elap_start
 
@@ -668,6 +669,10 @@ release_go() {
   clear
   printf "\n$BDG%s $OFF%s\n\n" "* UPDATING ENLIGHTENMENT DESKTOP: RELEASE BUILD *"
 
+  cp -f $SCRFLR/eligible.sh $HOME/.local/bin
+  chmod +x $HOME/.local/bin/eligible.sh
+  sleep 1
+
   printf "\n$BLD%s $OFF%s\n\n" "Satisfying dependencies under Ubuntu ${RELEASE^}..."
   bin_deps
 
@@ -817,13 +822,15 @@ remov_bin_deps() {
 }
 
 uninstall_e23() {
+  ESRC=$(cat $HOME/.cache/ebuilds/storepath)
+
   clear
   printf "\n\n$BDR%s %s\n\n" "* UNINSTALLING ENLIGHTENMENT DESKTOP *"
 
   cd $HOME
 
   for I in $PROG_MN; do
-    $ESRC/enlightenment23/$I && remov_eprog_mn
+    cd $ESRC/enlightenment23/$I && remov_eprog_mn
   done
 
   cd /etc
