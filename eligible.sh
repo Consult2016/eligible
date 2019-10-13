@@ -135,7 +135,7 @@ sel_menu() {
     # Hints.
     # 1/2: Plain build with well tested default values.
     # 3: A feature-rich, decently optimized build; however, occasionally technical glitches do happen...
-    # 4: Running Enlightenment as a Wayland compositor is still considered experimental.
+    # 4: Same as above, but running Enlightenment as a Wayland compositor is still considered experimental.
     # 5: Nuke 'Em All!
 
     sleep 2 && printf "$ITA%s $OFF%s\n\n" "Or press Ctrl+C to quit."
@@ -430,7 +430,7 @@ rebuild_wld() {
   for I in $PROG_MN; do
     elap_start
 
-    cd $ESRC/rlottie
+    cd $ESRC/enlightenment23/$I
     printf "\n$BLD%s $OFF%s\n\n" "Updating $I..."
     git reset --hard &>/dev/null
     git pull
