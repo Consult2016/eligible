@@ -42,13 +42,13 @@
 # Github repositories: https://github.com/batden
 # Eyecandy for your Enlightenment desktop: https://extra.enlightenment.org/
 
-# LOCAL VARIABLES
-# ---------------
-
 # Script debugging.
 # export PS4='+ $LINENO: '
 # export LC_ALL=C
 # set -vx
+
+# LOCAL VARIABLES
+# ---------------
 
 BLD="\e[1m"    # Bold text.
 ITA="\e[3m"    # Italic text.
