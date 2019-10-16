@@ -45,6 +45,11 @@
 # LOCAL VARIABLES
 # ---------------
 
+# Script debugging.
+# export PS4='+ $LINENO: '
+# export LC_ALL=C
+# set -vx
+
 BLD="\e[1m"    # Bold text.
 ITA="\e[3m"    # Italic text.
 BDR="\e[1;31m" # Bold red text.
