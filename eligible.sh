@@ -60,12 +60,12 @@ OFF="\e[0m"    # Turn off ANSI colors and formatting.
 PREFIX=/usr/local
 DLDIR=$(xdg-user-dir DOWNLOAD)
 DOCDIR=$(xdg-user-dir DOCUMENTS)
-ICNV=libiconv-1.16
 MVER=0.50.0
 SCRFLR=$HOME/.eligible
 CONFG="./configure --prefix=$PREFIX"
 SNIN="sudo ninja -C build install"
 RELEASE=$(lsb_release -sc)
+ICNV=libiconv-1.16
 
 # Build dependencies, recommended(2) and script-related(3) packages.
 DEPS="aspell automake autopoint build-essential ccache check cmake cowsay \
