@@ -5,7 +5,7 @@ A neat Bash script to build and install Enlightenment 23 on **Ubuntu Bionic Beav
 
 ## Get started
 
-Make sure that the `build-essential` and `git` packages are installed, then clone this repository:
+Make sure that the `git` package is installed, then clone this repository:
 
 ```bash
 git clone https://github.com/batden/eligible.git .eligible
