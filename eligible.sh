@@ -758,7 +758,7 @@ remov_meson() {
     || [ -d $HOME/.local/lib/python3.6/site-packages/mesonbuild ]; then
     echo
     beep_question
-    read -t 12 -p "Remove locally installed Meson? [y/N] " answer
+    read -t 12 -p "Remove locally installed Meson? [Y/n] " answer
     case $answer in
       [yY])
         echo
@@ -769,7 +769,10 @@ remov_meson() {
         printf "\n%s\n\n" "(do not remove Meson... OK)"
         ;;
       *)
-        printf "\n%s\n\n" "(do not remove Meson... OK)"
+      [yY])
+        echo
+        pip3 uninstall --yes meson
+        echo
         ;;
     esac
   fi
