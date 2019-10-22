@@ -770,7 +770,6 @@ remov_meson() {
         printf "\n%s\n\n" "(do not remove Meson... OK)"
         ;;
       *)
-      [yY])
         echo
         pip3 uninstall --yes meson
         echo
