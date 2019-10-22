@@ -775,32 +775,6 @@ remov_meson() {
   fi
 }
 
-# Think twice before proceeding with the removal of these packages!
-# If in doubt, take a screenshot for later reference, or better yet,
-# keep the currently installed set of development packages.
-remov_bin_deps() {
-  if [ ! -d $HOME/.local/lib/python3.5/site-packages/mesonbuild ] \
-    || [ ! -d $HOME/.local/lib/python3.6/site-packages/mesonbuild ]; then
-    echo
-    beep_question
-    read -t 12 -p "Remove binary dependencies (development packages)? [y/N] " answer
-    case $answer in
-      [yY])
-        printf "\n%s\n\n" "Please read the APT report carefully before pressing y to continue with the uninstall."
-        sleep 6
-        sudo apt autoremove $DEPS
-        echo
-        ;;
-      [nN])
-        printf "\n%s\n\n" "(keep the currently installed set of dev packages... OK)"
-        ;;
-      *)
-        printf "\n%s\n\n" "(keep the currently installed set of dev packages... OK)"
-        ;;
-    esac
-  fi
-}
-
 uninstall_e23() {
   ESRC=$(cat $HOME/.cache/ebuilds/storepath)
 
@@ -969,7 +943,6 @@ uninstall_e23() {
   fi
 
   remov_meson
-  remov_bin_deps
 
   rm -rf $HOME/.cache/ebuilds
   mv $DOCDIR/installed_pkgs.txt $DOCDIR/inst_pkgs_bak.txt
