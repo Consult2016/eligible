@@ -166,6 +166,12 @@ bin_deps() {
     sed -i '/linux-tools*/d' $DOCDIR/installed_pkgs.txt
   fi
 
+  # Backup list of manually installed packages.
+  if [ ! -f $DOCDIR/installed_manually_pkgs.txt ]; then
+    echo $(comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz \
+      | sed -n 's/^Package: //p' | sort -u)) >$DOCDIR/installed_manually_pkgs.txt
+  fi
+
   # Backup list of currently installed repositories.
   if [ ! -f $DOCDIR/installed_repos.txt ]; then
     grep -Erh ^deb /etc/apt/sources.list* >$DOCDIR/installed_repos.txt
@@ -967,6 +973,7 @@ uninstall_e23() {
 
   rm -rf $HOME/.cache/ebuilds
   mv $DOCDIR/installed_pkgs.txt $DOCDIR/inst_pkgs_bak.txt
+  mv $DOCDIR/installed_manually_pkgs.txt $DOCDIR/inst_m_pkgs_bak.txt
   mv $DOCDIR/installed_repos.txt $DOCDIR/inst_repos_bak.txt
 
   sudo rm -rf /usr/lib/libgnuintl.so.8
