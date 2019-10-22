@@ -643,9 +643,6 @@ update_go() {
   chmod +x $HOME/.local/bin/eligible.sh
   sleep 1
 
-  printf "\n$BLD%s $OFF%s\n\n" "Satisfying dependencies under Ubuntu ${RELEASE^}..."
-  bin_deps
-
   rebuild_plain
 
   sudo mv -f /usr/local/etc/enlightenment/sysactions.conf /etc
@@ -668,9 +665,6 @@ release_go() {
   chmod +x $HOME/.local/bin/eligible.sh
   sleep 1
 
-  printf "\n$BLD%s $OFF%s\n\n" "Satisfying dependencies under Ubuntu ${RELEASE^}..."
-  bin_deps
-
   rebuild_rel
 
   sudo mv -f /usr/local/etc/enlightenment/sysactions.conf /etc
@@ -692,9 +686,6 @@ wld_go() {
   cp -f $SCRFLR/eligible.sh $HOME/.local/bin
   chmod +x $HOME/.local/bin/eligible.sh
   sleep 1
-
-  printf "\n$BLD%s $OFF%s\n\n" "Satisfying dependencies under Ubuntu ${RELEASE^}..."
-  bin_deps
 
   rebuild_wld
 
