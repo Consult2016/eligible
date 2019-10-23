@@ -561,16 +561,13 @@ set_p_src() {
 }
 
 get_meson() {
-  if [ ! -d $HOME/.local/lib/python3.5/site-packages/mesonbuild ] \
-    && [ ! -d $HOME/.local/lib/python3.6/site-packages/mesonbuild ]; then
-    sudo apt install ninja-build python3-pip && pip3 install --user meson==$MVER
-    if [ "$?" == 0 ]; then
-      if ! echo $PATH | grep -q $HOME/.local/bin; then
-        echo -e '    export PATH=$HOME/.local/bin:$PATH' >>$HOME/.bash_aliases
-        source $HOME/.bash_aliases
-      else
-        true
-      fi
+  sudo apt install ninja-build python3-pip && pip3 install --user meson==$MVER
+  if [ "$?" == 0 ]; then
+    if ! echo $PATH | grep -q $HOME/.local/bin; then
+      echo -e '    export PATH=$HOME/.local/bin:$PATH' >>$HOME/.bash_aliases
+      source $HOME/.bash_aliases
+    else
+      true
     fi
   fi
 }
