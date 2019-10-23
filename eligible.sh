@@ -64,7 +64,6 @@ MVER=0.50.0
 SCRFLR=$HOME/.eligible
 SNIN="sudo ninja -C build install"
 RELEASE=$(lsb_release -sc)
-ICNV=libiconv-1.16
 
 # Build dependencies, recommended(2) and script-related(3) packages.
 DEPS="aspell build-essential ccache check cmake cowsay doxygen \
@@ -931,16 +930,6 @@ uninstall_e23() {
   fi
 
   remov_preq
-
-  if [ -d $ESRC/$ICNV ]; then
-    cd $ESRC/$ICNV
-    sudo make uninstall
-    make maintainer-clean
-    cd .. && rm -rf $ESRC/$ICNV
-    sudo rm -rf /usr/local/bin/iconv
-    echo
-  fi
-
   remov_meson
 
   rm -rf $HOME/.cache/ebuilds
