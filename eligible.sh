@@ -28,8 +28,8 @@
 # doing a complete uninstall and reinstall of E23 every two weeks or so for an optimal
 # user experience.
 
-# NOTE that you need to uninstall all E23 programs *before* upgrading your current system to
-# a newer version of Ubuntu.
+# NOTE that you need to uninstall all E23 programs *before* upgrading your current system
+# to a newer version of Ubuntu.
 
 # ELIGIBLE.SH is written by similar@orange.fr and carlasensa@sfr.fr,
 # feel free to use this script as you see fit.
