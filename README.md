@@ -39,7 +39,7 @@ eligible.sh
 
 Be sure to check for updates at least once a week.
 
-In order to do this, change to ~/.eligible/ and run:
+In order to do this, change to ~/.eligible and run:
 
 ```bash
 git pull
