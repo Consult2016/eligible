@@ -87,10 +87,9 @@ valgrind wayland-protocols wmctrl xserver-xephyr xwayland zenity"
 
 # (2|Optional) aspell, cmake, faenza-icon-theme, gstreamer1.0-libav,
 # gstreamer1.0-plugins-bad, gstreamer1.0-plugins-good,
-# gstreamer1.0-plugins-ugly, imagemagick, libexif-dev,
-# libgeoclue-2-dev, libscim-dev, libosmesa6-dev,
-# linux-tools-common, libvlc-dev, libxine2-dev,
-# manpages-dev, texlive-base, unity-greeter-badges,
+# gstreamer1.0-plugins-ugly, imagemagick, libgeoclue-2-dev,
+# libscim-dev, libosmesa6-dev, linux-tools-common, libvlc-dev,
+# libxine2-dev, manpages-dev, texlive-base, unity-greeter-badges,
 # valgrind, xserver-xephyr.
 # (3|Required) ccache, cowsay, git, lolcat, wmctrl, zenity.
 
