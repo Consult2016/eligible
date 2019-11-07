@@ -751,8 +751,7 @@ remov_preq() {
 }
 
 remov_meson() {
-  if [ -d $HOME/.local/lib/python3.5/site-packages/mesonbuild ] \
-    || [ -d $HOME/.local/lib/python3.6/site-packages/mesonbuild ]; then
+  if [ -d $HOME/.local/lib/python3.6/site-packages/mesonbuild ]; then
     echo
     beep_question
     read -t 12 -p "Remove locally installed Meson? [Y/n] " answer
