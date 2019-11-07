@@ -70,7 +70,7 @@ DEPS="aspell build-essential ccache check cmake cowsay doxygen \
 faenza-icon-theme git gstreamer1.0-libav gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly imagemagick \
 libasound2-dev libavahi-client-dev libblkid-dev libbluetooth-dev \
-libbullet-dev libcogl-gles2-dev libexif-dev libfontconfig1-dev \
+libbullet-dev libcogl-gles2-dev libfontconfig1-dev \
 libfreetype6-dev libfribidi-dev libgeoclue-2-dev libgif-dev \
 libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libharfbuzz-dev \
 libibus-1.0-dev libinput-dev libjpeg-dev libluajit-5.1-dev \
