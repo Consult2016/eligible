@@ -77,12 +77,12 @@ libharfbuzz-dev libibus-1.0-dev libinput-dev libjpeg-dev \
 libluajit-5.1-dev liblz4-dev libmount-dev libopenjp2-7-dev \
 libosmesa6-dev libpam0g-dev libpoppler-cpp-dev libpoppler-dev \
 libpoppler-private-dev libpulse-dev libraw-dev librsvg2-dev \
-libscim-dev libsndfile1-dev libspectre-dev \
-libssl-dev libsystemd-dev libtiff5-dev libtool libudev-dev \
-libudisks2-dev libunibreak-dev libunwind-dev libvlc-dev \
-libwebp-dev libxcb-keysyms1-dev libxcursor-dev libxine2-dev \
-libxinerama-dev libxkbcommon-x11-dev libxkbfile-dev libxrandr-dev \
-libxss-dev libxtst-dev linux-tools-common lolcat manpages-dev \
+libscim-dev libsndfile1-dev libspectre-dev libssl-dev \
+libsystemd-dev libtiff5-dev libtool libudev-dev libudisks2-dev \
+libunibreak-dev libunwind-dev libvlc-dev libwebp-dev \
+libxcb-keysyms1-dev libxcursor-dev libxine2-dev libxinerama-dev \
+libxkbcommon-x11-dev libxkbfile-dev libxrandr-dev libxss-dev \
+libxtst-dev linux-tools-common lolcat manpages-dev \
 python3-setuptools python3-wheel texlive-base unity-greeter-badges \
 valgrind wayland-protocols wmctrl xserver-xephyr xwayland zenity"
 
