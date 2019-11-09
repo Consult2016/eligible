@@ -40,7 +40,6 @@
 # Cheers!
 
 # Github repositories: https://github.com/batden
-# Eyecandy for your Enlightenment desktop: https://extra.enlightenment.org/
 # Screenshots: https://www.enlightenment.org/ss/
 
 # Script debugging.
