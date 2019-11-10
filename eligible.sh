@@ -69,7 +69,7 @@ DEPS="aspell build-essential ccache check cmake cowsay doxygen \
 faenza-icon-theme git gstreamer1.0-libav gstreamer1.0-plugins-bad \
 gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly imagemagick \
 libasound2-dev libavahi-client-dev libblkid-dev libbluetooth-dev \
-libbullet-dev libcogl-gles2-dev libfontconfig1-dev \
+libbullet-dev libcogl-gles2-dev libexif-dev libfontconfig1-dev \
 libfreetype6-dev libfribidi-dev libgeoclue-2-dev libgif-dev \
 libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev \
 libharfbuzz-dev libibus-1.0-dev libinput-dev libjpeg-dev \
@@ -87,10 +87,11 @@ valgrind wayland-protocols wmctrl xserver-xephyr xwayland zenity"
 
 # (2|Optional) aspell, cmake, faenza-icon-theme, gstreamer1.0-libav,
 # gstreamer1.0-plugins-bad, gstreamer1.0-plugins-good,
-# gstreamer1.0-plugins-ugly, imagemagick, libgeoclue-2-dev,
-# libscim-dev, libosmesa6-dev, linux-tools-common, libvlc-dev,
-# libxine2-dev, manpages-dev, texlive-base, unity-greeter-badges,
-# valgrind, xserver-xephyr.
+# gstreamer1.0-plugins-ugly, imagemagick, libexif-dev,
+# libgeoclue-2-dev, libosmesa6-dev, libscim-dev,
+# linux-tools-common, libvlc-dev, libxine2-dev, manpages-dev,
+# texlive-base, unity-greeter-badges, valgrind, xserver-xephyr.
+
 # (3|Required) ccache, cowsay, git, lolcat, wmctrl, zenity.
 
 # Programs from GIT repositories (latest source code).
