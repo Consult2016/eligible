@@ -619,8 +619,11 @@ install_now() {
   printf "\n%s\n\n" "Almost done..."
 
   mkdir -p $HOME/.elementary/themes
+  sudo mkdir -p /etc/enlightenment
 
-  sudo mv -f /usr/local/etc/enlightenment/sysactions.conf /etc
+  sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
+  sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
 
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
@@ -652,7 +655,9 @@ update_go() {
 
   rebuild_plain
 
-  sudo mv -f /usr/local/etc/enlightenment/sysactions.conf /etc
+  sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
+  sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
 
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
@@ -674,7 +679,9 @@ release_go() {
 
   rebuild_rel
 
-  sudo mv -f /usr/local/etc/enlightenment/sysactions.conf /etc
+  sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
+  sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
 
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
@@ -696,7 +703,9 @@ wld_go() {
 
   rebuild_wld
 
-  sudo mv -f /usr/local/etc/enlightenment/sysactions.conf /etc
+  sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
+  sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
 
   sudo updatedb
   beep_ok
@@ -785,8 +794,11 @@ uninstall_e23() {
     cd $ESRC/enlightenment23/$I && remov_eprog_mn
   done
 
-  cd /etc
+  cd /etc/enlightenment
   sudo rm -rf sysactions.conf
+
+  cd /etc/xdg/menus
+  sudo rm -rf e-applications.menu
 
   cd /usr/local
   sudo rm -rf ecore*
@@ -876,8 +888,9 @@ uninstall_e23() {
   sudo rm -rf elementary*
   sudo rm -rf terminology*
 
-  cd /usr/share
-  sudo rm -rf xsessions/enlightenment.desktop &>/dev/null
+  cd /usr/share/xsessions
+  sudo rm -rf enlightenment.desktop
+
   cd /usr/share/dbus-1/services
   sudo rm -rf org.enlightenment.Ethumb.service
 
