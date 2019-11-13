@@ -660,6 +660,10 @@ update_go() {
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
 
+  if [ -f /usr/share/wayland-sessions/enlightenment.desktop ]; then
+    sudo rm -rf /usr/share/wayland-sessions/enlightenment.desktop
+  fi
+
   sudo updatedb
   beep_ok
   echo
@@ -683,6 +687,10 @@ release_go() {
   sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
+
+  if [ -f /usr/share/wayland-sessions/enlightenment.desktop ]; then
+    sudo rm -rf /usr/share/wayland-sessions/enlightenment.desktop
+  fi
 
   sudo updatedb
   beep_ok
