@@ -619,10 +619,12 @@ install_now() {
   printf "\n%s\n\n" "Almost done..."
 
   mkdir -p $HOME/.elementary/themes
-  sudo mkdir -p /etc/enlightenment
 
+  sudo mkdir -p /etc/enlightenment
   sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
   sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
+
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
 
@@ -654,9 +656,10 @@ update_go() {
   rebuild_plain
 
   sudo mkdir -p /etc/enlightenment
-
   sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
   sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
+
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
 
@@ -682,9 +685,10 @@ release_go() {
   rebuild_rel
 
   sudo mkdir -p /etc/enlightenment
-
   sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
   sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
+
   sudo ln -sf /usr/local/share/xsessions/enlightenment.desktop \
     /usr/share/xsessions/enlightenment.desktop
 
