@@ -701,13 +701,14 @@ wld_go() {
 
   rebuild_wld
 
-  sudo mkdir -p /etc/enlightenment
   sudo mkdir -p /usr/share/wayland-sessions
-
-  sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
-  sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
   sudo ln -sf /usr/local/share/wayland-sessions/enlightenment.desktop \
     /usr/share/wayland-sessions/enlightenment.desktop
+
+  sudo mkdir -p /etc/enlightenment
+  sudo ln -sf /usr/local/etc/enlightenment/sysactions.conf /etc/enlightenment/sysactions.conf
+
+  sudo ln -sf /usr/local/etc/xdg/menus/e-applications.menu /etc/xdg/menus/e-applications.menu
 
   sudo updatedb
   beep_ok
@@ -890,11 +891,14 @@ uninstall_e23() {
   sudo rm -rf elementary*
   sudo rm -rf terminology*
 
-  cd /usr/share/xsessions
-  sudo rm -rf enlightenment.desktop
-
   cd /usr/share/dbus-1/services
   sudo rm -rf org.enlightenment.Ethumb.service
+
+  cd /usr/share/wayland-sessions
+  sudo rm -rf enlightenment.desktop
+
+  cd /usr/share/xsessions
+  sudo rm -rf enlightenment.desktop
 
   cd $HOME
   rm -rf $ESRC/enlightenment23
