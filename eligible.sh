@@ -163,7 +163,6 @@ bin_deps() {
     sed -i '/linux-modules*/d' $DOCDIR/installed_pkgs.txt
     sed -i '/linux-image*/d' $DOCDIR/installed_pkgs.txt
     sed -i '/linux-signed*/d' $DOCDIR/installed_pkgs.txt
-    sed -i '/linux-tools*/d' $DOCDIR/installed_pkgs.txt
   fi
 
   # Backup list of manually installed packages.
