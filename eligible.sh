@@ -81,16 +81,17 @@ libsystemd-dev libtiff5-dev libtool libudev-dev libudisks2-dev \
 libunibreak-dev libunwind-dev libvlc-dev libwebp-dev \
 libxcb-keysyms1-dev libxcursor-dev libxine2-dev libxinerama-dev \
 libxkbcommon-x11-dev libxkbfile-dev libxrandr-dev libxss-dev \
-libxtst-dev linux-tools-common lolcat manpages-dev \
-python3-setuptools python3-wheel texlive-base unity-greeter-badges \
-valgrind wayland-protocols wmctrl xserver-xephyr xwayland zenity"
+libxtst-dev lolcat manpages-dev python3-setuptools python3-wheel \
+texlive-base unity-greeter-badges valgrind wayland-protocols \
+wmctrl xserver-xephyr xwayland zenity"
 
 # (2|Optional) aspell, cmake, faenza-icon-theme, gstreamer1.0-libav,
 # gstreamer1.0-plugins-bad, gstreamer1.0-plugins-good,
 # gstreamer1.0-plugins-ugly, imagemagick, libexif-dev,
 # libgeoclue-2-dev, libosmesa6-dev, libscim-dev,
-# linux-tools-common, libvlc-dev, libxine2-dev, manpages-dev,
-# texlive-base, unity-greeter-badges, valgrind, xserver-xephyr.
+# libvlc-dev, libxine2-dev, manpages-dev,
+# texlive-base, unity-greeter-badges,
+# valgrind, xserver-xephyr.
 
 # (3|Required) ccache, cowsay, git, lolcat, wmctrl, zenity.
 
