@@ -809,8 +809,8 @@ uninstall_e23() {
     cd $ESRC/enlightenment23/$I && remov_eprog_mn
   done
 
-  cd /etc/enlightenment
-  sudo rm -rf sysactions.conf
+  cd /etc
+  sudo rm -rf enlightenment
 
   cd /etc/xdg/menus
   sudo rm -rf e-applications.menu
