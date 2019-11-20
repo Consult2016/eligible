@@ -398,7 +398,7 @@ rebuild_rel() {
       efl)
         sudo chown $USER build/.ninja*
         meson configure -Dnative-arch-optimization=true -Dharfbuzz=true -Dbindings=luajit,cxx -Dbuild-tests=false \
-          -Dbuild-examples=false -Devas-loaders-disabler= -Dbuildtype=release build
+          -Dbuild-examples=false -Devas-loaders-disabler=json -Dbuildtype=release build
         ninja -C build || mng_err
         ;;
       enlightenment)
@@ -452,7 +452,8 @@ rebuild_wld() {
       efl)
         sudo chown $USER build/.ninja*
         meson configure -Dnative-arch-optimization=true -Dharfbuzz=true -Dbindings=luajit,cxx -Ddrm=true -Dwl=true \
-          -Dopengl=es-egl -Dbuild-tests=false -Dbuild-examples=false -Devas-loaders-disabler= -Dbuildtype=release build
+          -Dopengl=es-egl -Dbuild-tests=false -Dbuild-examples=false -Devas-loaders-disabler=json \
+          -Dbuildtype=release build
         ninja -C build || mng_err
         ;;
       enlightenment)
