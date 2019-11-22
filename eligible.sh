@@ -243,7 +243,7 @@ elap_stop() {
 }
 
 e_bkp() {
-  # Timestamp: See man date to convert epoch to human readable date.
+  # Timestamp: See man date to convert epoch to human-readable date or visit https://www.epochconverter.com/
   TSTAMP=$(date +%s)
   mkdir -p $DOCDIR/ebackups
 
