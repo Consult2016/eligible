@@ -21,7 +21,7 @@ Now change to the download folder and make the script executable:
 chmod +x eligible.sh
 ```
 
-Then issue the following command:
+Then issue the following command as currently logged in user (not as root):
 
 ```bash
 ./eligible.sh
