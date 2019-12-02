@@ -47,6 +47,6 @@ git pull
 
 That's it.
 
-_(as normal user == as currently logged in user, without sudo)_
+_(as normal user == as currently logged in user, do not prepend sudo to the command)_
 
 Mind the cows! :cow2: :cow2: :cow2:
