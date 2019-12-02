@@ -5,7 +5,7 @@ A neat Bash script to build and install Enlightenment 23 on **Ubuntu Bionic Beav
 
 ## Get started
 
-Make sure that the `git` package is installed, then clone this repository (as normal user*):
+Make sure that the `git` package is installed, then clone this repository (as normal user)*
 
 ```bash
 git clone https://github.com/batden/eligible.git .eligible
@@ -15,19 +15,19 @@ That creates a new [hidden folder](https://itsfoss.com/hide-folders-and-show-hid
 
 Please copy the file _"eligible.sh"_ from this new folder to the download folder.
 
-Now change to the download folder and make the script executable*:
+Now change to the download folder and make the script executable*
 
 ```bash
 chmod +x eligible.sh
 ```
 
-Then issue the following command*:
+Then issue the following command*
 
 ```bash
 ./eligible.sh
 ```
 
-On subsequent runs, open Terminal and simply type*:
+On subsequent runs, open Terminal and simply type*
 
 ```bash
 eligible.sh
@@ -39,7 +39,7 @@ eligible.sh
 
 Be sure to check for updates at least once a week.
 
-In order to do this, change to ~/.eligible and run*:
+In order to do this, change to ~/.eligible and run*
 
 ```bash
 git pull
