@@ -3,7 +3,7 @@
 
 A neat Bash script to build and install Enlightenment 23 on **Ubuntu Bionic Beaver**.
 
-Intended audience: Beginner - Intermediate - ~~Advanced~~
+Intended audience: beginner - intermediate - ~~advanced~~
 
 ## Get started
 
