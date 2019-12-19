@@ -42,11 +42,6 @@
 # Github repositories: https://github.com/batden
 # Screenshots: https://www.enlightenment.org/ss/
 
-# Script debugging.
-# export PS4='+ $LINENO: '
-# export LC_ALL=C
-# set -vx
-
 # LOCAL VARIABLES
 # ---------------
 
