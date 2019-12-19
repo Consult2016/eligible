@@ -3,6 +3,8 @@
 
 A neat Bash script to build and install Enlightenment 23 on **Ubuntu Bionic Beaver**.
 
+Intended audience: Beginner - Intermediate - ~~Advanced~~
+
 ## Get started
 
 Make sure that the `git` package is installed, then clone this repository (as normal user)*
