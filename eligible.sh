@@ -511,13 +511,9 @@ do_tests() {
     exit 1
   fi
 
-  if [ ! -d $HOME/.local/bin ]; then
-    mkdir -p $HOME/.local/bin
-  fi
+  [ ! -d $HOME/.local/bin ] && mkdir -p $HOME/.local/bin
 
-  if [ ! -d $HOME/.cache/ebuilds ]; then
-    mkdir -p $HOME/.cache/ebuilds
-  fi
+  [ ! -d $HOME/.cache/ebuilds ] && mkdir -p $HOME/.cache/ebuilds
 }
 
 do_bsh_alias() {
