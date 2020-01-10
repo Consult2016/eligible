@@ -846,8 +846,8 @@ uninstall_e23() {
   sudo rm -rf enlightenment*
   sudo rm -rf ethumb*
   sudo rm -rf evas*
-  sudo rm -rf x86*
-  sudo rm -rf i386*
+  #sudo rm -rf x86*
+  #sudo rm -rf i386*
   sudo rm -rf libecore*
   sudo rm -rf libector*
   sudo rm -rf libedje*
