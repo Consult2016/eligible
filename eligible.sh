@@ -922,7 +922,7 @@ uninstall_e23() {
   sudo rm -rf Ethumb*
   sudo rm -rf Evas*
 
-  cd /usr/local/lib/x86_64-linux-gnu/pkgconfig || cd /usr/local/lib/i386-linux-gnu/pkconfig
+  cd /usr/local/lib/x86_64-linux-gnu/pkgconfig || cd /usr/local/lib/i386-linux-gnu/pkgconfig
   sudo rm -rf ecore*
   sudo rm -rf ector*
   sudo rm -rf edje*
