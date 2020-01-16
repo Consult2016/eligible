@@ -31,7 +31,7 @@
 # NOTE that you need to uninstall all E23 programs *before* upgrading your current system
 # to a newer version of Ubuntu.
 
-# ELIGIBLE.SH is written by similar@orange.fr and carlasensa@sfr.fr,
+# ELIGIBLE.SH is written by batden@sfr.fr and carlasensa@sfr.fr,
 # feel free to use this script as you see fit.
 # Before reporting an issue, make sure you are using the latest version.
 
