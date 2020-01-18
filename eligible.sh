@@ -522,7 +522,6 @@ do_bsh_alias() {
     touch $HOME/.bash_aliases
 
     cat >$HOME/.bash_aliases <<EOF
-
     # GLOBAL VARIABLES
     # ----------------
 
