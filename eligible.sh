@@ -370,6 +370,7 @@ rebuild_rel() {
   git reset --hard &>/dev/null
   git pull
   echo
+  sudo chown $USER build/.ninja*
   meson configure -Dexample=false -Dbuildtype=release build
   ninja -C build || mng_err
   $SNIN || mng_err
@@ -388,17 +389,20 @@ rebuild_rel() {
 
     case $I in
       efl)
+        sudo chown $USER build/.ninja*
         meson configure -Dnative-arch-optimization=true -Dfb=true -Dharfbuzz=true \
           -Dbindings=luajit,cxx -Dbuild-tests=false -Dbuild-examples=false \
           -Devas-loaders-disabler=json -Dbuildtype=release build
         ninja -C build || mng_err
         ;;
       enlightenment)
+        sudo chown $USER build/.ninja*
         meson configure -Dbuildtype=release build
         ninja -C build || mng_err
         ;;
       *)
         meson configure -Dbuildtype=release build
+        sudo chown $USER build/.ninja*
         ninja -C build || true
         ;;
     esac
@@ -421,6 +425,7 @@ rebuild_wld() {
   git reset --hard &>/dev/null
   git pull
   echo
+  sudo chown $USER build/.ninja*
   meson configure -Dexample=false -Dbuildtype=release build
   ninja -C build || mng_err
   $SNIN || mng_err
@@ -439,6 +444,7 @@ rebuild_wld() {
 
     case $I in
       efl)
+        sudo chown $USER build/.ninja*
         meson configure -Dnative-arch-optimization=true -Dfb=true -Dharfbuzz=true \
           -Dbindings=luajit,cxx -Ddrm=true -Dwl=true -Dopengl=es-egl \
           -Dbuild-tests=false -Dbuild-examples=false \
@@ -447,10 +453,12 @@ rebuild_wld() {
         ninja -C build || mng_err
         ;;
       enlightenment)
+        sudo chown $USER build/.ninja*
         meson configure -Dwl=true -Dbuildtype=release build
         ninja -C build || mng_err
         ;;
       *)
+        sudo chown $USER build/.ninja*
         meson configure -Dbuildtype=release build
         ninja -C build || true
         ;;
