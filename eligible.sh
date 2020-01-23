@@ -182,7 +182,7 @@ bin_deps() {
 }
 
 ls_dir() {
-  COUNT=$(ls -d */ | wc -l)
+  COUNT=$(ls -d -- */ | wc -l)
   if [ $COUNT == 3 ]; then
     printf "$BDG%s $OFF%s\n\n" "All programs have been downloaded successfully."
     sleep 2
