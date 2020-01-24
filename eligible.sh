@@ -292,15 +292,15 @@ build_plain() {
 
     case $I in
       efl)
-        meson . build
+        meson build
         ninja -C build || mng_err
         ;;
       enlightenment)
-        meson . build
+        meson build
         ninja -C build || mng_err
         ;;
       *)
-        meson . build
+        meson build
         ninja -C build || true
         ;;
     esac
@@ -339,15 +339,15 @@ rebuild_plain() {
 
     case $I in
       efl)
-        meson . build
+        meson build
         ninja -C build || mng_err
         ;;
       enlightenment)
-        meson . build
+        meson build
         ninja -C build || mng_err
         ;;
       *)
-        meson . build
+        meson build
         ninja -C build || true
         ;;
     esac
@@ -573,7 +573,7 @@ get_preq() {
   cd $ESRC
   git clone https://github.com/Samsung/rlottie.git
   cd $ESRC/rlottie
-  meson . build
+  meson build
   meson configure -Dexample=false -Dbuildtype=release build
   ninja -C build || mng_err
   $SNIN || mng_err
