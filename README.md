@@ -1,7 +1,7 @@
 
 # eligible.sh
 
-A neat Bash script to build and install Enlightenment 23 on **Ubuntu Bionic Beaver**.
+A neat Bash script to build and install Enlightenment 23 on **Ubuntu Bionic Beaver** :palm_tree:
 
 Intended audience: beginner - intermediate - ~~advanced~~
 
