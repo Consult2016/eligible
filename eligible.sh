@@ -372,8 +372,8 @@ rebuild_rel() {
   echo
   sudo chown $USER build/.ninja*
   meson configure -Dexample=false -Dbuildtype=release build
-  ninja -C build || mng_err
-  $SNIN || mng_err
+  ninja -C build || true
+  $SNIN || true
   sudo ldconfig
 
   elap_stop
@@ -427,8 +427,8 @@ rebuild_wld() {
   echo
   sudo chown $USER build/.ninja*
   meson configure -Dexample=false -Dbuildtype=release build
-  ninja -C build || mng_err
-  $SNIN || mng_err
+  ninja -C build || true
+  $SNIN || true
   sudo ldconfig
 
   elap_stop
