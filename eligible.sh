@@ -864,7 +864,7 @@ uninstall_e23() {
   sudo rm -rf libethumb*
   sudo rm -rf libevas*
 
-  cd /usr/local/lib/x86_64-linux-gnu || cd /usr/local/lib/i386-linux-gnu
+  cd /usr/local/lib/*-linux-gnu
   sudo rm -rf ecore*
   sudo rm -rf edje*
   sudo rm -rf eeze*
@@ -897,7 +897,7 @@ uninstall_e23() {
   sudo rm -rf libevas*
   sudo rm -rf librlottie*
 
-  cd /usr/local/lib/x86_64-linux-gnu/cmake || cd /usr/local/lib/i386-linux-gnu/cmake
+  cd /usr/local/lib/*-linux-gnu/cmake
   sudo rm -rf Ecore*
   sudo rm -rf Edje*
   sudo rm -rf Eet*
@@ -917,7 +917,7 @@ uninstall_e23() {
   sudo rm -rf Ethumb*
   sudo rm -rf Evas*
 
-  cd /usr/local/lib/x86_64-linux-gnu/pkgconfig || cd /usr/local/lib/i386-linux-gnu/pkgconfig
+  cd /usr/local/lib/*-linux-gnu/pkgconfig
   sudo rm -rf ecore*
   sudo rm -rf ector*
   sudo rm -rf edje*
