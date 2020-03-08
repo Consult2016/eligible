@@ -72,19 +72,17 @@ libopenjp2-7-dev libosmesa6-dev libpam0g-dev libpoppler-cpp-dev \
 libpoppler-dev libpoppler-private-dev libpulse-dev libraw-dev \
 librsvg2-dev libscim-dev libsndfile1-dev libspectre-dev libssl-dev \
 libsystemd-dev libtiff5-dev libtool libudev-dev libudisks2-dev \
-libunibreak-dev libunwind-dev libvlc-dev libwebp-dev \
-libxcb-keysyms1-dev libxcursor-dev libxine2-dev libxinerama-dev \
-libxkbcommon-x11-dev libxkbfile-dev libxrandr-dev libxss-dev \
-libxtst-dev lolcat manpages-dev python3-setuptools python3-wheel \
-texlive-base unity-greeter-badges valgrind wayland-protocols \
-wmctrl xserver-xephyr xwayland zenity"
+libunibreak-dev libunwind-dev libwebp-dev libxcb-keysyms1-dev \
+libxcursor-dev libxinerama-dev libxkbcommon-x11-dev libxkbfile-dev \
+libxrandr-dev libxss-dev libxtst-dev lolcat manpages-dev \
+python3-setuptools python3-wheel texlive-base unity-greeter-badges \
+valgrind wayland-protocols wmctrl xserver-xephyr xwayland zenity"
 
 # (2|Optional) aspell, cmake, faenza-icon-theme, gstreamer1.0-libav,
 # gstreamer1.0-plugins-bad, gstreamer1.0-plugins-good,
 # gstreamer1.0-plugins-ugly, imagemagick, libexif-dev,
 # libgeoclue-2-dev, libosmesa6-dev, libscim-dev,
-# libvlc-dev, libxine2-dev, manpages-dev,
-# texlive-base, unity-greeter-badges,
+# manpages-dev, texlive-base, unity-greeter-badges,
 # valgrind, xserver-xephyr.
 
 # (3|Required) ccache, cowsay, git, lolcat, wmctrl, zenity.
